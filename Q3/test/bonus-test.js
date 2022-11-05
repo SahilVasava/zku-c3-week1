@@ -53,6 +53,8 @@ describe("SystemOfEquations", function () {
         const c = [argv[6], argv[7]];
         const Input = argv.slice(8);
 
+        const res = await verifier.verifyProof(a, b, c, Input)
+        console.log(res)
         expect(await verifier.verifyProof(a, b, c, Input)).to.be.true;
     });
     it("Should return false for invalid proof", async function () {

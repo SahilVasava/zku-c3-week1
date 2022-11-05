@@ -121,7 +121,7 @@ describe("Multiplier3 with PLONK", function () {
         // console.log("calldata",calldata)
     
         const argv = calldata.replace(/["[\]\s]/g, "").split(',').map(x => x);
-        // console.log("argv",argv)
+        console.log("argv",argv)
     
         const proofData = argv[0]
         const Input = argv.slice(1);
